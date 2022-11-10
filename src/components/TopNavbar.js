@@ -45,11 +45,7 @@ const navItemsList = (
         <ListItemText primary="Contributions" />
       </ListItemButton>
     </ListItem>
-    <ListItem button component={Link} to="/publication">
-      <ListItemButton sx={{ textAlign: "center" }}>
-        <ListItemText primary="Publications" />
-      </ListItemButton>
-    </ListItem>
+
     <ListItem button component={Link} to="/news">
       <ListItemButton sx={{ textAlign: "center" }}>
         <ListItemText primary="News" />
@@ -139,9 +135,7 @@ function DrawerAppBar(props) {
             <Button component={Link} to="/contributions" sx={{ color: "#fff" }}>
               Contributions
             </Button>
-            <Button component={Link} to="/publication" sx={{ color: "#fff" }}>
-              Publications
-            </Button>
+
             <Button component={Link} to="/news" sx={{ color: "#fff" }}>
               News
             </Button>

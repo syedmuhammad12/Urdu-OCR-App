@@ -77,11 +77,11 @@ export default function OcrEnginePage() {
             </Grid>
             {/* Tagline*/}
             <Grid item xs={12} sm={12} md={12} lg={12}>
-              <Typography sx={{}}>
+              <Typography>
                 <Box
                   sx={{
                     textAlign: "start",
-                    my: 1,
+                    mb: 3,
                     color: "#808080",
                     fontSize: "h6.fontSize",
                   }}

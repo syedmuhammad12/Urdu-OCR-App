@@ -31,16 +31,18 @@ function NewsPage() {
                 color: "#08b3e5",
               }}
             >
-              <Divider />
               News
+              <Divider />
             </Box>
           </Typography>
         </Grid>
       </Grid>
       {/* News pic */}
       <Grid container sx={{ mt: 7, justifyContent: "center" }}>
-        <Grid item xs={12}>
-          <img src="images/news_pic.jpg" alt="news pic" width="100%" />
+        <Grid item xs={9}>
+          <Box>
+            <img src="images/news_pic.jpg" alt="news pic" width="100%" />
+          </Box>
         </Grid>
       </Grid>
     </Box>

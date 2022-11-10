@@ -24,7 +24,7 @@ function AboutPage() {
           <Typography>
             <Box
               sx={{
-                mt: 9,
+                mt: 7,
                 textAlign: "center",
                 fontWeight: "bold",
                 fontSize: "h4.fontSize",
@@ -38,7 +38,11 @@ function AboutPage() {
         </Grid>
       </Grid>
       {/* row 1 */}
-      <Grid container spacing={2} sx={{ mt: 9, justifyContent: "center" }}>
+      <Grid
+        container
+        columnSpacing={3}
+        sx={{ mt: 4, justifyContent: "center" }}
+      >
         <Grid item xs={12} sm={12} md={5}>
           <img src="images/urdupic-2.jpg" alt="urdu pic" />
         </Grid>
@@ -47,7 +51,7 @@ function AboutPage() {
           <Typography>
             <Box
               sx={{
-                mt: 9,
+                mt: 3,
                 textAlign: "center",
                 fontWeight: "bold",
                 fontSize: "h4.fontSize",
@@ -58,7 +62,7 @@ function AboutPage() {
             </Box>
             <Box
               sx={{
-                mt: 9,
+                mt: 3,
                 textAlign: "center",
                 fontWeight: "regular",
                 fontSize: "body2.fontSize",
@@ -73,14 +77,18 @@ function AboutPage() {
         </Grid>
       </Grid>
       {/* row 2 */}
-      <Grid container spacing={2} sx={{ mt: 19, justifyContent: "center" }}>
-        <Grid item xs={12} sm={12} md={5}>
+      <Grid
+        container
+        columnSpacing={3}
+        sx={{ mt: 4, justifyContent: "center" }}
+      >
+        <Grid item xs={12} sm={12} md={4}>
           {/* our goal */}
 
           <Typography>
             <Box
               sx={{
-                mt: 9,
+                mt: 3,
                 textAlign: "center",
                 fontWeight: "bold",
                 fontSize: "h4.fontSize",
@@ -91,7 +99,7 @@ function AboutPage() {
             </Box>
             <Box
               sx={{
-                mt: 9,
+                mt: 3,
                 textAlign: "center",
                 fontWeight: "regular",
                 fontSize: "body2.fontSize",
@@ -104,14 +112,14 @@ function AboutPage() {
             </Box>
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={12} md={5}>
+        {/* <Grid item xs={12} sm={12} md={6}>
           <img
             src="images/urdu project.png"
             alt="urdu project pic"
-            height="100%"
             width="100%"
+            height="100%"
           />
-        </Grid>
+        </Grid> */}
       </Grid>
     </Box>
   );

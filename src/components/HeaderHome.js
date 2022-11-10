@@ -1,8 +1,6 @@
 import React from "react";
 import { Button, Grid, Typography, Stack, Box } from "@mui/material";
-// import headerpic_mob1 from "./../../public/assets/images/logo/headerpic_mob1.png";
-// import headerpic_mob2 from "./../../public/assets/images/logo/headerpic_mob2.png";
-
+import { Link } from "react-router-dom";
 function HeaderHome() {
   return (
     // main row header
@@ -49,6 +47,8 @@ function HeaderHome() {
           >
             <Button
               variant="contained"
+              component={Link}
+              to="/OcrEngine"
               sx={{
                 px: 9,
                 py: 2,

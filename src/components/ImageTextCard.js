@@ -16,8 +16,30 @@ export default function ImgTextCard(props) {
         image={props.img}
       />
       <CardContent>
-        <Typography variant="body1" color="#008080">
+        <Typography
+          variant="body1"
+          color="#008080"
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center",
+          }}
+        >
           {props.text}
+        </Typography>
+        {/* for title of a person (team members) */}
+        <Typography
+          variant="p"
+          color="#808080"
+          sx={{
+            mt: 1,
+            justifyContent: "center",
+            textAlign: "center",
+            fontWeight: "bold",
+            display: "flex",
+          }}
+        >
+          {props.title}
         </Typography>
       </CardContent>
     </Card>

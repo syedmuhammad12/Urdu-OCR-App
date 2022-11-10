@@ -1,33 +1,27 @@
 import React from "react";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import Card from "@mui/material/Card";
+import Box from "@mui/material/Box";
 import CardContent from "@mui/material/CardContent";
 
-const drawerWidth = 240;
-
-function PublicationsPage() {
+function BoxPublication() {
   return (
-    <Box
-      component="main"
-      sx={{
-        flexGrow: 1,
-        p: 2,
-        width: { sm: `calc(100% - ${drawerWidth}px)` },
-      }}
+    <Grid
+      container
+      columnSpacing={{ xs: 4, sm: 5, md: 9 }}
+      rowSpacing={{ xs: 5, sm: 5, md: 9 }}
+      sx={{ justifyContent: "center" }}
     >
-      <Toolbar />
-
-      {/* heading */}
       <Grid container justifyContent="center">
+        {/* heading */}
         <Grid item xs={12}>
           <Typography>
             <Box
               sx={{
-                mt: 4,
+                mt: 9,
+                pt: 3,
                 textAlign: "center",
                 fontWeight: "bold",
                 fontSize: "h4.fontSize",
@@ -40,19 +34,23 @@ function PublicationsPage() {
           </Typography>
         </Grid>
       </Grid>
-      {/* row 1 has 2 cards */}
 
       <Grid
         container
         columnSpacing={10}
-        rowSpacing={5}
-        sx={{ mt: 7, justifyContent: "center" }}
+        rowSpacing={1}
+        sx={{ mt: 4, justifyContent: "center" }}
       >
         {/* p1 */}
-        <Grid item xs={12}>
+        <Grid item xs={10}>
           <Card
             variant="outlined"
-            sx={{ borderColor: "#f5f5f5", borderRadius: 8, py: 2, px: 3 }}
+            sx={{
+              borderColor: "#f5f5f5",
+              borderRadius: 8,
+              // py: 2,
+              px: 3,
+            }}
           >
             <CardContent>
               <Typography variant="body1">
@@ -66,10 +64,15 @@ function PublicationsPage() {
         </Grid>
 
         {/* p2 */}
-        <Grid item xs={12}>
+        <Grid item xs={10}>
           <Card
             variant="outlined"
-            sx={{ borderColor: "#f5f5f5", borderRadius: 8, py: 2, px: 3 }}
+            sx={{
+              borderColor: "#f5f5f5",
+              borderRadius: 8,
+              // py: 2,
+              px: 3,
+            }}
           >
             <CardContent>
               <Typography variant="body1">
@@ -82,8 +85,8 @@ function PublicationsPage() {
           </Card>
         </Grid>
       </Grid>
-    </Box>
+    </Grid>
   );
 }
 
-export default PublicationsPage;
+export default BoxPublication;
